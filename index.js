@@ -3,27 +3,21 @@ import { weatherCodes } from './weatherCodes.js'
 document.addEventListener('DOMContentLoaded', () => {
 	const settingsForm = document.getElementById('settings-form')
 	const toggleSettingsButton = document.getElementById('toggle-settings')
-	const colorForm = document.getElementById('color-form')
 
 	const settings = JSON.parse(localStorage.getItem('settings'))
 
 	if (!settings) {
 		settingsForm.style.display = 'block'
-		colorForm.style.display = 'block'
 	} else {
 		settingsForm.style.display = 'none'
 		toggleSettingsButton.style.display = 'block'
-
-		colorForm.style.display = 'none'
 	}
 
 	toggleSettingsButton.addEventListener('click', () => {
 		if (settingsForm.style.display === 'none') {
 			settingsForm.style.display = 'block'
-			colorForm.style.display = 'block'
 		} else {
 			settingsForm.style.display = 'none'
-			colorForm.style.display = 'none'
 		}
 	})
 })

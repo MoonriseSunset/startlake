@@ -1,5 +1,7 @@
 # startlake
 
+> Updated version of startlake. Modified with some Nord theme colors, Sometype Mono for the numbers, and my own photos.
+
 just another startpage. a weekend project that i kinda gave up on.
 
 ![image](https://github.com/user-attachments/assets/502148ac-9d75-461a-96cd-f274d969f274)
